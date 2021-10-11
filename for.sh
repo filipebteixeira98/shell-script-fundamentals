@@ -1,5 +1,5 @@
 #!/bin/bash
-for users in user1 user2 user3 user4 user5
+for user in $(seq 5);
 do
 	useradd -m "$users"
 	passwd "$users"
